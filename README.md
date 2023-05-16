@@ -54,4 +54,4 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ## Contact
 
-- GitHub [Jaiboon26](https://{github.com/Jaiboon26})
+- GitHub [Jaiboon26](https://github.com/Jaiboon26)
