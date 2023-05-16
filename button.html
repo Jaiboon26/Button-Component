@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtonChallenges</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div>
+        <h1>Buttons Components</h1>
+    </div>
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button /&gt;</p>
+                <button type="button">Default</button> <!--Just button-->
+            </div>
+            <div class="col-3">
+                <p>&hover , &focus</p>
+                <button type="button" class="btn-hover">Default</button> <!--Default button with hover-->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button variant="outline" /&gt;</p>
+                <button type="button" class="btn-outline">Default</button> <!--Button outline-->
+            </div>
+            <div class="col-3">
+                <p>&hover , &focus</p>
+                <button type="button" class="btn-ol-hover">Default</button> <!--Button outline and hover-->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button variant="text" /&gt;</p>
+                <button type="button" class="btn-text">Default</button> <!--Button text with bgcolor=transparent-->
+            </div>
+            <div class="col-3">
+                <p>&hover , &focus</p>
+                <button class="btn-text-hover">Default</button> <!--Button text on hover-->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button disableShadow /&gt;</p>
+                <button class="btn-shadow" type="button" id="btn-shadow">Default</button>
+                 <!--Button disableshadow (Using javascript for toggle shadow)-->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button disable /&gt;</p>
+                <button type="button" disabled>Disabled</button> <!--Button disable-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button variant="text" disable /&gt;</p>
+                <button type="button" class="btn-text" disabled>Disabled</button> <!--Button text disable-->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button startIcon=”local_grocery_store” /&gt;</p>
+                <button type="button" class="btn-icon">
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                    </span>
+                    Default
+                </button>
+                <!--Button with icon at start (just add span before text)-->
+            </div>
+            <div class="col-6">
+                <p>&lt;Button endIcon=”local_grocery_store” /&gt;</p>
+                <button type="button" class="btn-icon">
+                    Default
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                    </span>
+                    <!--Button with icon at start (just add span after text)-->
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button size="sm" /&gt;</p>
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <!--Button small using Bootstrap class-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button size="md" /&gt;</p>
+                <button type="button" class="btn btn-primary">Medium button</button>
+                <!--Button medium using Bootstrap class-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button size="lg" /&gt;</p>
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <!--Button large using Bootstrap class-->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button color=”default” /&gt;</p>
+                <button type="button">Default</button>
+                <!--Button default-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button color=primary" /&gt;</p>
+                <button type="button" class="btn-pri">Primary</button>
+                <!--Button add primary class-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button color="secondary" /&gt;</p>
+                <button type="button" class="btn-sec">Secondary</button>
+                <!--Button add secondary class-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button color=”danger” /&gt;</p>
+                <button type="button" class="btn-dan">Danger</button>
+                <!--Button add danger class-->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-3">
+                <p>&lt;Button color=”default” /&gt;</p>
+                <button class="def-hover">Default</button>
+                <!--Button default and add hover-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button color=primary" /&gt;</p>
+                <button type="button" class="btn-pri pri-hover">Primary</button>
+                <!--Button primary and add hover-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button color="secondary" /&gt;</p>
+                <button type="button" class="btn-sec sec-hover">Secondary</button>
+                <!--Button secondary and add hover-->
+            </div>
+            <div class="col-3">
+                <p>&lt;Button color=”danger” /&gt;</p>
+                <button type="button" class="btn-dan dan-hover">Danger</button>
+                <!--Button danger and add hover-->
+            </div>
+        </div>
+    </div>
+    <script>
+        const shadowButton1 = document.getElementById('btn-shadow');
+
+            shadowButton1.addEventListener('click', function () {
+                const button = document.getElementById('btn-shadow');
+                button.classList.toggle('btn-shadow-tg');
+            });
+            //Use for toggle shadow button
+    </script>
+</body>
+
+</html>
